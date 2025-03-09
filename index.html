@@ -1,20 +1,173 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'American Typewriter'; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'American Typewriter'; -webkit-text-stroke: #000000; min-height: 21.0px}
-    span.s1 {font-kerning: none}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Personal Website</title>
+  <!-- MDUI CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+  <!-- Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    /* Responsive video container */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    /* Music item spacing */
+    .music-item {
+      margin-bottom: 20px;
+    }
   </style>
 </head>
-<body>
-<p class="p1"><span class="s1">Hello My Site</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">This is James’s personal website, hosted new on Github Pages, I’m trying to get rid of the old InfinityFree hosted website, and renovate the design to Google’s Material 3.</span></p>
+<body class="mdui-theme-primary-green mdui-appbar-with-toolbar">
+  <!-- Appbar -->
+  <header class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-green">
+      <a href="#" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+      <span class="mdui-typo-title">My Personal Website</span>
+    </div>
+  </header>
+
+  <div class="mdui-container mdui-m-t-5">
+    <!-- About Section -->
+    <section id="about" class="mdui-typo">
+      <h2>About Me</h2>
+      <p>Welcome to my personal website. Here you can explore my videos, music pieces, and more about my work and passion.</p>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="mdui-m-t-5">
+      <h2>Videos</h2>
+      <div class="mdui-row">
+        <!-- First Video -->
+        <div class="mdui-col-xs-12 mdui-col-md-6">
+          <div class="video-container">
+            <!-- Replace with your first video embed URL -->
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <!-- Second Video -->
+        <div class="mdui-col-xs-12 mdui-col-md-6">
+          <div class="video-container">
+            <!-- Replace with your second video embed URL -->
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="mdui-m-t-5">
+      <h2>Music</h2>
+      <div class="mdui-row">
+        <!-- Music Piece 1 -->
+        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+          <div class="music-item mdui-card">
+            <div class="mdui-card-media">
+              <img src="music1.jpg" alt="Music Piece 1" style="width:100%;">
+            </div>
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Music Piece 1</div>
+              <div class="mdui-card-primary-subtitle">A short description</div>
+            </div>
+            <div class="mdui-card-actions">
+              <audio controls style="width:100%;">
+                <source src="music1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+        </div>
+        <!-- Music Piece 2 -->
+        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+          <div class="music-item mdui-card">
+            <div class="mdui-card-media">
+              <img src="music2.jpg" alt="Music Piece 2" style="width:100%;">
+            </div>
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Music Piece 2</div>
+              <div class="mdui-card-primary-subtitle">A short description</div>
+            </div>
+            <div class="mdui-card-actions">
+              <audio controls style="width:100%;">
+                <source src="music2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+        </div>
+        <!-- Music Piece 3 -->
+        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+          <div class="music-item mdui-card">
+            <div class="mdui-card-media">
+              <img src="music3.jpg" alt="Music Piece 3" style="width:100%;">
+            </div>
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Music Piece 3</div>
+              <div class="mdui-card-primary-subtitle">A short description</div>
+            </div>
+            <div class="mdui-card-actions">
+              <audio controls style="width:100%;">
+                <source src="music3.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+        </div>
+        <!-- Music Piece 4 -->
+        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+          <div class="music-item mdui-card">
+            <div class="mdui-card-media">
+              <img src="music4.jpg" alt="Music Piece 4" style="width:100%;">
+            </div>
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Music Piece 4</div>
+              <div class="mdui-card-primary-subtitle">A short description</div>
+            </div>
+            <div class="mdui-card-actions">
+              <audio controls style="width:100%;">
+                <source src="music4.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+        </div>
+        <!-- Music Piece 5 -->
+        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+          <div class="music-item mdui-card">
+            <div class="mdui-card-media">
+              <img src="music5.jpg" alt="Music Piece 5" style="width:100%;">
+            </div>
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Music Piece 5</div>
+              <div class="mdui-card-primary-subtitle">A short description</div>
+            </div>
+            <div class="mdui-card-actions">
+              <audio controls style="width:100%;">
+                <source src="music5.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- MDUI JavaScript -->
+  <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
 </body>
 </html>
